@@ -1,7 +1,7 @@
 const User = require ("../models/auth")
 const jwt=require("jsonwebtoken")
 const ErrorHandler=require ("../utilities/errorHandler")
-const catchAsyncErrors= require("../middleware/catchAsyncErrors")
+const catchAsyncErrors= require("../middleWare/catchAsyncErrors")
 
 //Verify the user type
 exports.isAuthenticatedUser= catchAsyncErrors(async (req, res, next)=>{
