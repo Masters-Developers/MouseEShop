@@ -117,7 +117,7 @@ return (
     {loading ? <i className="fa fa-refresh fa-spin fa-3x fa-fw"></i> : (
       <Fragment>
         <MetaData title={item.name}></MetaData>
-        <div className='row d-flex justify-content-around'>
+        <div className='row d-flex justify-content-around mt-5'>
           <div className='col-12 col-lg-5 img-fluid' id="image_item">
             <Carousel pause='hover'>
               {item.image && item.image.map(img => (
