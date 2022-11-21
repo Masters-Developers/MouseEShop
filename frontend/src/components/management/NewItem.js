@@ -40,7 +40,7 @@ const NewItem = () => {
             dispatch(fixErrors)
         }
         if (success) {
-            navigate("/dashboard")
+            navigate("/")
             alert.success("Item Registred succesfully")
             dispatch({ type: NEW_ITEM_RESET})
         }
