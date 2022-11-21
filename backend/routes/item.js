@@ -2,7 +2,7 @@ const express=require("express")
 const router=express.Router();
 
 const {getItems, newItem, getItemsByID,updateItem,deleteItem,createItemReview,getItemReviews,deleteReview, getItemsManagement} = require("../controllers/itemsController.js") //Bring the response from Items Controller
-const { isAuthenticatedUser , authorizeRoles} = require("../middleware/auth");
+const { isAuthenticatedUser , authorizeRoles} = require("../middleWare/auth");
 router.route('/items').get(getItems); //Set router for to get THE ITEMS
 router.route('/items/new').post(isAuthenticatedUser, authorizeRoles("management"),newItem); //SET THE ROUTER FOR CREATE A NEW ITEM
 router.route('/items/:id').get(getItemsByID);//set route for get items by id
