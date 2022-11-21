@@ -1,0 +1,43 @@
+{
+  "name": "mouse-e-shop",
+  "version": "1.0.0",
+  "description": "Mouse-E-Shop is a vegan virtual shop",
+  "main": "server.js",
+  "engines": {
+    "node": "16.17.1"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "export NODE_END=DEVELOPMENT& nodemon backend/server",
+    "prod": "export NODE_END=PRODUCTION& nodemon backend/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && unset NODE_OPTIONS=--openssl-legacy-provider && npm install --force --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyGreyrat/MOUSE_E_SHOP.git"
+  },
+  "author": "MASTERS-DEVELOPERS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyGreyrat/MOUSE_E_SHOP/issues"
+  },
+  "homepage": "https://github.com/AndyGreyrat/MOUSE_E_SHOP#readme",
+  "dependencies": {
+    "@sundawning/node-options-openssl-legacy-provider": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "node-fetch": "^3.2.10",
+    "nodemailer": "^6.8.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
