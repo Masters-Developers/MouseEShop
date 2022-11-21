@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "export NODE_END=DEVELOPMENT& nodemon backend/server",
-    "prod": "export NODE_END=PRODUCTION& nodemon backend/server",
+    "dev": "SET NODE_END=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_END=PRODUCTION& nodemon backend/server",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && unset NODE_OPTIONS=--openssl-legacy-provider && npm install --force --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
