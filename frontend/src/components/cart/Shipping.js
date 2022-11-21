@@ -34,7 +34,7 @@ export const Shipping = () => {
             <CheckoutSteps shipping />
             <div className="row wrapper">
                 <div className="col-10 col-lg-5">
-                    <form className="shadow-lg" onClick={submitHandler}>
+                    <form className="shadow-lg" onSubmit={submitHandler}>
                         <h1 className="mb-4">Send Information</h1>
                         <div className="form-group">
                             <label htmlFor="address_field">Adress</label>
