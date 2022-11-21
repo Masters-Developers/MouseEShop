@@ -13,7 +13,7 @@ const NewItem = () => {
     const [name, setName] = useState("")
     const [price, setPrice] = useState(0)
     const [description, setDescription] = useState("")
-    const [categ, setCategory] = useState("")
+    const [categ, setCateg] = useState("")
     const [stock, setStock] = useState(0)
     const [seller, setSeller] = useState("")
     const [image, setImage] = useState([])
@@ -134,7 +134,7 @@ const NewItem = () => {
                                     <select className="form-control"
                                         id="category_field"
                                         value={categ}
-                                        onChange={(e) => setCategory(e.target.value)}>
+                                        onChange={(e) => setCateg(e.target.value)}>
                                         {category.map(categ=> (
                                             <option key={categ} value={categ}>{categ}</option>
                                         ))}
