@@ -12,7 +12,7 @@ export const Success = () => {
                 <div className="col-6 mt-5 text-center">
                     <img className="my-5 img-fluid d-block mx-auto" src="/images/items/orderOk.jpeg" alt="Success!" width="200" height="200" />
 
-                    <h2>Your order has been registered successfully, we will be in touch soon</h2>
+                    <h2>Your order has been registered successfully, we will be in contact soon</h2>
 
                     <Link to="/">Back to Home</Link>
                 </div>

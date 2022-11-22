@@ -144,9 +144,9 @@ return (
               <input type="number" className="form-control count d-inline" value={quantity} readOnly />
               <span className="btn btn-primary plus" onClick={increaseQty}>+</span>
             </div>
-            <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={item.stock=== 0} onClick={addToCart}>Agregar al Carrito</button>
+            <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={item.stock=== 0} onClick={addToCart}>Add to cart</button>
             <hr />
-            <p>Estado: <span id="stock_stado" className={item.stock> 0 ? 'greenColor' : 'redColor'}>{item.stock> 0 ? "In Stock " : "Finished"}</span></p>
+            <p>State: <span id="stock_stado" className={item.stock> 0 ? 'greenColor' : 'redColor'}>{item.stock> 0 ? "In Stock " : "Finished"}</span></p>
             <hr />
             <hr />
               <p id="category">Category: <strong>{item.category}</strong></p>
@@ -154,7 +154,7 @@ return (
             <h4 className="mt-2">Description:</h4>
             <p>{item.description}</p>
             <hr />
-            <p id="seller">Vendido por: <strong>{item.seller}</strong></p>
+            <p id="seller">Sell By: <strong>{item.seller}</strong></p>
 
             {user ?
               <button id="btn_review" type="button" className="btn btn-primary mt-4"
